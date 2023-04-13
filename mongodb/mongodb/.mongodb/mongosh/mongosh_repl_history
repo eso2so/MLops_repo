@@ -1,0 +1,11 @@
+exit
+db.book.find()
+db.book.deleteOne({name:"hello docker"})
+db.book.find({name:"hello docker"})
+db.book.updateOne( { _id: ObjectId("61e374779cbbcefe0d6d744d") }, { $set: { author: "lee docker" } } )
+db.book.find().pretty()
+db.book.insertMany([{name:"hello python", author:"choi"},{name:"hello docker", author:"kim"}])
+db.book.insertOne({name:"hello mongo", author:"lee"})
+db.createCollection('book')
+use mydb
+create database
